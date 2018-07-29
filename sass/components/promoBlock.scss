@@ -1,0 +1,53 @@
+.promoBlock{
+    padding: 80px 85px 135px 85px;
+    text-align: center;
+    background-image: url(../img/bitmap.png);
+    background-size: cover;
+    &Logo{
+        margin-bottom: 105px;
+    }
+    &Paragraph{
+        max-width: 510px;
+        margin: 0 auto;
+        margin-bottom: 65px;
+        color: #ffffff;
+        font-family: "Roboto";
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 36px;
+        letter-spacing: 1.25px;
+    }
+    &Wrapper{
+        max-width: 960px;
+        margin: 0 auto;
+        margin-bottom: 130px
+    }
+    &Buttons{
+        max-width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        @media (max-width: $mobile-width){
+           flex-direction: column;
+           min-height: 85px;
+        }
+    }
+    &Games{
+        display: flex;
+        justify-content: center;
+    }
+    &GamesItem{
+        margin-right: 45px;
+        width: 32px;
+        height: 32px;
+        filter: grayscale(100%);
+        opacity: 0.5;
+        img{
+            width: 100%;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

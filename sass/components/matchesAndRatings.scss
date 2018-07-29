@@ -1,0 +1,55 @@
+.matchesAndRatings{
+    background-color: $grey-light;
+    padding: 100px 0px;
+    
+    &Title{
+        margin-bottom: 50px;
+        @media (max-width: $mobile-width){
+            text-align: center;
+          }
+    }
+    &Text{
+        /* Style for "Vote for y" */
+        max-width: 398px;
+        color: $text-grey;
+        font-size: 14px;
+        font-family: Roboto;
+        font-weight: 100;
+        line-height: 24px;
+        letter-spacing: 0.88px;
+        margin-bottom: 75px;
+        @media (max-width: $mobile-width){
+             margin: 0 auto;
+             margin-bottom: 50px;
+        }
+    }
+    &Image{
+        @media (max-width: $mobile-width){
+            width: 100%;
+            img{
+                width: 100%;
+            }
+         }
+    }
+    &RightTitle{
+        color: $text-grey;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        text-align: center;
+        margin-bottom: 90px;
+        @media (max-width: $mobile-width){
+            margin-top: 70px;
+            margin-bottom: 50px;
+          }
+    }
+    &Event{
+        @media (max-width: $mobile-width){
+            width: 100%;
+            img{
+                width: 100%
+            }
+         }
+    }
+}

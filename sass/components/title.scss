@@ -1,0 +1,16 @@
+.title{
+    color: $text-black;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    &Big{
+        font-size: 30px;
+    }
+    &Black{
+        color: $text-black;
+    }
+}

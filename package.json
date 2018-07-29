@@ -28,5 +28,8 @@
     "gulp-uglify": "^2.0.0",
     "gulp-uncss": "^1.0.6",
     "imagemin-pngquant": "^5.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3"
   }
 }

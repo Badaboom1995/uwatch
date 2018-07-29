@@ -1,0 +1,76 @@
+.featuredTournaments{
+    background-color: $darker-blue;
+    padding-bottom: 85px;
+    &Catalog{
+        margin-bottom: 35px;
+    }
+    &Item{
+        margin-bottom: 10px;
+        &:hover{
+            text-decoration: none;
+            .featuredTournamentsItemInfo{
+                background-color: $grey;
+                &::before{
+                    background-color: #fff;
+                    filter: none;
+                }
+            }
+        }
+    }
+    &Title{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &ItemImage{
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    &ItemInfo{
+       width: 100%;
+       position: relative;
+       padding-top: 20px;
+       padding-left: 65px;
+       align-items: flex-start;
+       &::before{
+           content: '';
+           display: inline-block;
+           position: absolute;
+           left: 10px;
+           top: 15px;
+           width: 42px;
+           height: 42px;
+           box-sizing: border-box;
+           padding: 8px 7px 6px 7px;
+           background-color: $grey;
+           border-radius: 2px;
+           background-repeat: no-repeat;
+           background-position: center;
+           filter: grayscale(100%);
+       }
+       &Dota::before{
+           background-image: url(../img/dota-icon.png);
+       }
+       &CsGo::before{
+           background-image: url(../img/csgo-icon.png);
+       }
+    }
+    &ItemName{
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        
+    }
+    &ItemTime{
+        color: $text-grey;
+        font-size: 12px;
+        font-weight: 300;
+        
+    }
+    &More{
+        margin: 0 auto;
+        display: block;
+    }
+}

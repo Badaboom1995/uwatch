@@ -1,0 +1,39 @@
+.button{
+    min-width: 140px;
+    display: inline-block;
+    border-radius: 2px;
+    background-color: $blue;
+    color: #fff;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.85px;
+    padding: 0px 5px;
+    padding-top: 7px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    text-align: center;
+    &:hover{
+       background-color: lighten($blue, 2) ;
+       color: #fff;
+       text-decoration: none;
+    }
+    &Transparent{
+        background-color: transparent;
+        border: 1px solid #fff;
+        &:hover{
+            background-color: rgba(#fff, 0.1) ;
+            color: #fff;
+         }
+    }
+    &Dark{
+        background-color: #1d71b8;
+        &:hover{
+            background-color: lighten(#1d71b8, 5) ;
+            color: #fff;
+         }
+    }
+}
