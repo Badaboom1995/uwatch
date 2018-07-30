@@ -16,6 +16,7 @@
     padding-bottom: 4px;
     cursor: pointer;
     text-align: center;
+    border: none;
     &:hover{
        background-color: lighten($blue, 2) ;
        color: #fff;
@@ -35,5 +36,14 @@
             background-color: lighten(#1d71b8, 5) ;
             color: #fff;
          }
+    }
+    &Glow{
+        box-shadow: 0 0 12px 2px #1066af;
+    }
+    &Red{
+        background-color: #e6332a;
+        &:hover{
+            background-color: lighten(#e6332a, 5);
+        }
     }
 }

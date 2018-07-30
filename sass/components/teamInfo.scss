@@ -1,0 +1,68 @@
+.teamInfo{
+    margin-bottom: 50px;
+    &Main{
+        margin-bottom: 75px;
+    }
+    &Logo{
+        position: relative;
+        width: 71px;
+        height: 71px;
+        box-sizing: border-box;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+        background-color: #fff;
+        margin-bottom: 30px;
+        img{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+        }
+    }
+    &Name{
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    &Role{
+        font-family: Roboto;
+        display: block;
+        color: #cfd0d2;
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 25px;
+    }
+    &Buttons{
+        display: flex;
+        justify-content: space-between;
+        max-width: 440px;
+        margin-bottom: 50px;
+    }
+    &About{
+
+    }
+    &AboutTitle{
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+        margin-bottom: 30px;
+    }
+    &AboutParagraph{
+        width: 350px;
+        color: #cfd0d2;
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 0px;
+    }
+}

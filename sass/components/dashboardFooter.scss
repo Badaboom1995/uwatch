@@ -1,0 +1,32 @@
+.dashboardFooter{
+    padding: 0px 80px;
+    border-top: 1px solid $grey;
+    display: flex;
+    background-color: rgba($black, 0.5);
+    &Tab{
+        color: $blue;
+        width: 200px;
+        display: block;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 47px;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+        position: relative;
+        &:after{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 8px;
+            right: 0;
+            height: 30px;
+            width: 1px;
+            background-color: #272d3d;
+        }
+    }
+    &TabActive{
+        border-top: 3px solid $blue;
+    }
+}

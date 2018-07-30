@@ -1,0 +1,66 @@
+.liveMatches{
+    width: 100%;
+    position: relative;    
+    &Title{
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+        margin-bottom: 20px;
+    }
+    &Slider{
+        width: 100%;
+        display: flex;
+        overflow: scroll;
+    }
+    &Controls{
+        display: flex;
+        width: 64px;
+        padding: 5px 0px;
+        position: absolute;
+        right: 10px;
+        top: -10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+        border: 1px solid #14171e;
+        background-color: rgba(36, 40, 48, 0.8);
+    }
+    &Control{
+        position: relative;
+        width: 50%;
+        height: 23px;
+        box-sizing: border-box;
+        border-right: 1px solid #14171e;
+        &:last-child{
+            border: none;
+        }
+        &:hover{
+            cursor: pointer;
+            background-color: rgba(36, 40, 48, 1);
+
+        }
+        &:before{
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+            left: 12px;
+            top: 8px;
+        }
+    }
+    &ControlNext{
+        &:before{
+            transform:rotate(45deg);
+        }
+       
+    }
+    &ControlPrev{
+        &:before{
+            transform:rotate(-135deg);
+        }
+    }
+}

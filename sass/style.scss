@@ -1,7 +1,7 @@
 @import "normalize.scss";
-@import "general.scss";
 @import "variables.scss";
 @import "mixins.scss";
+@import "general.scss";
 @import "./components/button.scss";
 @import "./components/logo.scss";
 @import "./components/promoBlock.scss";
@@ -13,3 +13,14 @@
 @import "./components/partnership.scss";
 @import "./components/mainFooter.scss";
 @import "./components/social.scss";
+@import "./components/wrapperDashboardPage.scss";
+@import "./components/mainHeader.scss";
+@import "./components/leftAside.scss";
+@import "./components/mainScreen.scss";
+@import "./components/rightAside.scss";
+@import "./components/dashboardFooter.scss";
+@import "./components/quests.scss";
+@import "./components/pageBg.scss";
+@import "./components/teamInfo.scss";
+@import "./components/liveMatches.scss";
+@import "./components/matchCard.scss";

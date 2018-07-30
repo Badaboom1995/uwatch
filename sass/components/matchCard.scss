@@ -1,0 +1,80 @@
+.matchCard{
+    max-width: 276px;
+    box-sizing: border-box;
+    background-color: #242830;
+    margin-right: 15px;
+    &Header{
+        background-color: #14171e;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    &Name{
+        color: #cfd0d2;
+        font-family: Roboto;
+        font-size: 11px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+    &Date{
+        color: #cfd0d2;
+        font-family: Roboto;
+        font-size: 11px;
+        font-weight: 400;
+    }
+    &Teams{
+        padding: 5px 10px;
+        border-bottom: 1px solid #14171e;
+    }
+    &Team{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 5px;
+    }
+    &TeamLeft{
+        display: flex;
+        align-items: baseline;
+    }
+    &TeamLogo{
+        margin-right: 10px;
+    }
+    &TeamName{
+        color: #cfd0d2;
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+    }
+    &TeamScore{
+        color: #cfd0d2;
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+    }
+    &Bets{
+        display: flex;
+        padding: 5px 0px;
+    }
+    &Bet{
+        display: flex;
+        justify-content: space-between;
+        width: 92px;
+        box-sizing: border-box;
+        border-right: 1px solid #14171e;
+        padding: 0px 10px;
+    }
+    &BetType{
+        opacity: 0.5;
+        color: #cfd0d2;
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    &BetValue{
+        color: #cfd0d2;
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 400;
+    }
+}

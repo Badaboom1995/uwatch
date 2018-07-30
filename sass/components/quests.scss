@@ -1,0 +1,56 @@
+.quests{
+    &Image{
+        width: 100%;
+        box-sizing: border-box;
+        padding:10px;
+        img{
+            width: 100%;
+        }
+    }
+    &Button{
+        width: calc(100% - 20px);
+        display: block;
+        margin: 0 auto;;
+    }
+    &Header{
+        padding: 0px 10px;
+        padding-right: 45px;
+        padding-bottom: 15px;
+        position: relative;
+    }
+    &Title{
+        display: block;
+        color: $blue;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    &Subtitle{
+        color: $text-grey;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &Counter{
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #33394b;
+    }
+    &CounterNumber{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform:translate(-50%, -50%);
+        font-family: Roboto;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}

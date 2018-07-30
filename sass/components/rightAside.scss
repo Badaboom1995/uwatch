@@ -1,0 +1,97 @@
+.rightAside{
+    background-color: $black;
+    min-width: 300px;
+    &Nav{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #33394b;
+        background-color: #11151f;
+    }
+    &NavButton{
+        min-width: 46px;
+        min-height: 40px ;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        &:hover{
+            background-color: rgba(#fff, 0.1);
+        }
+    }
+    &NavButtonActive{
+        border-top: 2px solid $blue;
+        background-image: url(../img/icon-burger.png);
+    }
+    &Team{
+        
+    }
+    &TeamBlock{
+        padding: 10px 0px;
+        position: relative;
+        border-bottom: 1px solid #33394b;
+        background-color: #272d3d;
+    }
+    &TeamName{
+        color: #fff;
+        width: calc(100%-55px);
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        padding-left: 10px;
+    }
+    &TeamTime{
+        color: $text-grey;
+        width: calc(100%-55px);
+        font-family: Roboto;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 22px;
+        padding-left: 10px;
+    }
+    &TeamLogo{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 41px;
+        height: 41px;
+        border-radius: 4px;
+        background-color:rgba(#fff, 0.1);
+        img{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &TeamParameter{
+        width: 49%;
+        box-sizing: border-box;
+        display: inline-block;
+        position: relative;
+        padding-right: 10px;
+        border-right: 1px solid #33394b;
+        padding: 0px 10px;
+        &:last-child{
+            border: none;
+        }
+    }
+    &TeamParameterName{
+        color: $text-grey;
+        font-family: Roboto;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 22px;
+        text-transform: uppercase;
+    }
+    &TeamParameterValue{
+        float: right;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 28px;
+        text-transform: uppercase;
+    }
+
+}
