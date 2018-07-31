@@ -30,6 +30,12 @@
             }
          }
     }
+    &Left{
+        @media (max-width: $mobile-width){
+            margin-bottom: 30px;
+            text-align: center;
+         }
+    }
     &RightTitle{
         color: $text-grey;
         font-size: 14px;
@@ -44,11 +50,112 @@
           }
     }
     &Event{
+        background-color: #1f2433;
+        padding: 35px 50px 45px 50px;
+        display: flex;
+        position: relative;
+        &:before{
+            content: 'VS';
+            position: absolute;
+            top: 165px;
+            left: 50%;
+            transform:translateX(-50%);
+            width: 72px;
+            height: 72px;
+            box-sizing: border-box;
+            padding: 13px 20px;
+            border-radius: 2px;
+            background-color: #2e364b;
+            /* Style for "VS" */
+            color: #7f8494;
+            font-family: Roboto;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 50px;
+            text-transform: uppercase;
+            z-index: 10;
+        }
         @media (max-width: $mobile-width){
             width: 100%;
             img{
                 width: 100%
             }
          }
+    }
+    &VoteScreenSide{
+        width: 50%;
+        box-sizing: border-box;
+        text-align: center;
+        position: relative;
+        &:last-child:before{
+            width: 0;
+            display: none;
+        }
+        &:before{
+            content: '';
+            position: absolute;
+            right: 0;
+            top: -35px;
+            width: 1px;
+            height: 385px;
+            background-color: #2e364b;
+        }
+    }
+    &SideLogo{
+        margin-bottom: 22px;
+        height: 135px;
+        overflow: hidden;
+        img{
+            height: 100%;
+            @media (max-width: $mobile-width){
+                width: 100%;
+                // height: auto;
+            }
+        }
+    }
+    &SidePercents{
+        margin-bottom: 20px;
+        display: block;
+        color: #4faeff;
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &SidePrecentsRed{
+        color: #e62a52;
+    }
+    &SideName{
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    &EventDots{
+        position: absolute;
+        display: flex;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &EventDotsItem{
+        /* Style for "Rectangle" */
+        width: 30px;
+        height: 6px;
+        border-radius: 10px;
+        background-color: #7f8494;
+        margin-right: 13px;
+        &:hover{
+            cursor: pointer;
+            background-color: lighten(#7f8494, 10);
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &EventDotsItemActive{
+        background-color: #4faeff;
     }
 }

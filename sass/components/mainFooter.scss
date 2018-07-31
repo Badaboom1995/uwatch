@@ -13,6 +13,9 @@
         font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 1px;
+        &:hover{
+            color: #fff;
+        }
         &:last-child{
             margin-right: 0;
         }

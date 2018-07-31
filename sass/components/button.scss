@@ -39,11 +39,17 @@
     }
     &Glow{
         box-shadow: 0 0 12px 2px #1066af;
+        &:hover{
+            background-color: lighten($blue, 5) ;
+         }
     }
     &Red{
         background-color: #e6332a;
         &:hover{
             background-color: lighten(#e6332a, 5);
         }
+    }
+    &RedGlow{
+        box-shadow: 0 0 8px #e62a52;
     }
 }

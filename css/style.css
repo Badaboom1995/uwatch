@@ -408,6 +408,11 @@ template {
   display: flex;
   flex-direction: column; }
 
+a {
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    text-decoration: none; }
+
 .button {
   min-width: 140px;
   display: inline-block;
@@ -444,10 +449,14 @@ template {
       color: #fff; }
   .buttonGlow {
     box-shadow: 0 0 12px 2px #1066af; }
+    .buttonGlow:hover {
+      background-color: #69baff; }
   .buttonRed {
     background-color: #e6332a; }
     .buttonRed:hover {
       background-color: #e94941; }
+  .buttonRedGlow {
+    box-shadow: 0 0 8px #e62a52; }
 
 .logo {
   width: 140px;
@@ -664,6 +673,10 @@ template {
       width: 100%; }
       .matchesAndRatingsImage img {
         width: 100%; } }
+  @media (max-width: 768px) {
+    .matchesAndRatingsLeft {
+      margin-bottom: 30px;
+      text-align: center; } }
   .matchesAndRatingsRightTitle {
     color: #7f8494;
     font-size: 14px;
@@ -676,11 +689,98 @@ template {
       .matchesAndRatingsRightTitle {
         margin-top: 70px;
         margin-bottom: 50px; } }
-  @media (max-width: 768px) {
-    .matchesAndRatingsEvent {
-      width: 100%; }
-      .matchesAndRatingsEvent img {
-        width: 100%; } }
+  .matchesAndRatingsEvent {
+    background-color: #1f2433;
+    padding: 35px 50px 45px 50px;
+    display: flex;
+    position: relative; }
+    .matchesAndRatingsEvent:before {
+      content: 'VS';
+      position: absolute;
+      top: 165px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 72px;
+      height: 72px;
+      box-sizing: border-box;
+      padding: 13px 20px;
+      border-radius: 2px;
+      background-color: #2e364b;
+      /* Style for "VS" */
+      color: #7f8494;
+      font-family: Roboto;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 50px;
+      text-transform: uppercase;
+      z-index: 10; }
+    @media (max-width: 768px) {
+      .matchesAndRatingsEvent {
+        width: 100%; }
+        .matchesAndRatingsEvent img {
+          width: 100%; } }
+  .matchesAndRatingsVoteScreenSide {
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative; }
+    .matchesAndRatingsVoteScreenSide:last-child:before {
+      width: 0;
+      display: none; }
+    .matchesAndRatingsVoteScreenSide:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: -35px;
+      width: 1px;
+      height: 385px;
+      background-color: #2e364b; }
+  .matchesAndRatingsSideLogo {
+    margin-bottom: 22px;
+    height: 135px;
+    overflow: hidden; }
+    .matchesAndRatingsSideLogo img {
+      height: 100%; }
+      @media (max-width: 768px) {
+        .matchesAndRatingsSideLogo img {
+          width: 100%; } }
+  .matchesAndRatingsSidePercents {
+    margin-bottom: 20px;
+    display: block;
+    color: #4faeff;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .matchesAndRatingsSidePrecentsRed {
+    color: #e62a52; }
+  .matchesAndRatingsSideName {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px; }
+  .matchesAndRatingsEventDots {
+    position: absolute;
+    display: flex;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .matchesAndRatingsEventDotsItem {
+    /* Style for "Rectangle" */
+    width: 30px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #7f8494;
+    margin-right: 13px; }
+    .matchesAndRatingsEventDotsItem:hover {
+      cursor: pointer;
+      background-color: #9b9fab; }
+    .matchesAndRatingsEventDotsItem:last-child {
+      margin-right: 0; }
+  .matchesAndRatingsEventDotsItemActive {
+    background-color: #4faeff; }
 
 .partnership {
   padding-top: 70px;
@@ -727,6 +827,8 @@ template {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px; }
+    .mainFooterLinksItem:hover {
+      color: #fff; }
     .mainFooterLinksItem:last-child {
       margin-right: 0; }
   .mainFooterSocial {
@@ -749,21 +851,14 @@ template {
     margin-right: 30px;
     width: 20px;
     height: 25px;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    color: #7f8494; }
+    .socialItem:hover {
+      color: #fff; }
     .socialItem:last-child {
       margin-right: 0; }
   .socialItemInst {
-    background-image: url(../img/icon-inst.png); }
-  .socialItemYoutube {
-    background-image: url(../img/icon-youtube.png); }
-  .socialItemVk {
-    background-image: url(../img/icon-vk.png); }
-  .socialItemFb {
-    background-image: url(../img/icon-fb.png); }
-  .socialItemTwich {
-    background-image: url(../img/icon-twich.png); }
-  .socialItemTwitter {
-    background-image: url(../img/icon-twitter.png); }
+    font-weight: 700; }
 
 .wrapperDashboardPage {
   display: flex;

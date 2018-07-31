@@ -5,26 +5,31 @@
         width: 20px;
         height: 25px;
         background-repeat: no-repeat;
+        color:$text-grey;
+        &:hover{
+           color: #fff;
+        }
         &:last-child{
             margin-right: 0;
         }
     }
     &ItemInst{
-        background-image: url(../img/icon-inst.png);
+        // background-image: url(../img/icon-inst.png);
+        font-weight: 700;
     }
     &ItemYoutube{
-        background-image: url(../img/icon-youtube.png);
+        // background-image: url(../img/icon-youtube.png);
     }
     &ItemVk{
-        background-image: url(../img/icon-vk.png);
+        
     }
     &ItemFb{
-        background-image: url(../img/icon-fb.png);
+        
     }
     &ItemTwich{
-        background-image: url(../img/icon-twich.png);
+        
     }
     &ItemTwitter{
-        background-image: url(../img/icon-twitter.png);
+        
     }
 }
