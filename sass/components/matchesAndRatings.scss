@@ -54,6 +54,10 @@
         padding: 35px 50px 45px 50px;
         display: flex;
         position: relative;
+        @media (max-width: $mobile-width){
+                flex-direction: column;
+                padding: 15px 30px;
+        }
         &:before{
             content: 'VS';
             position: absolute;
@@ -66,7 +70,6 @@
             padding: 13px 20px;
             border-radius: 2px;
             background-color: #2e364b;
-            /* Style for "VS" */
             color: #7f8494;
             font-family: Roboto;
             font-size: 26px;
@@ -74,19 +77,32 @@
             line-height: 50px;
             text-transform: uppercase;
             z-index: 10;
-        }
-        @media (max-width: $mobile-width){
-            width: 100%;
-            img{
-                width: 100%
+            @media (max-width: $mobile-width){
+                display: none;
             }
-         }
+        }
+        // @media (max-width: $mobile-width){
+        //     width: 100%;
+        //     img{
+        //         width: 100%
+        //     }
+        //  }
     }
     &VoteScreenSide{
         width: 50%;
         box-sizing: border-box;
         text-align: center;
         position: relative;
+        @media (max-width: $mobile-width){
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 30px 0px;
+            // padding-left: 80px;
+            
+        }
         &:last-child:before{
             width: 0;
             display: none;
@@ -99,18 +115,34 @@
             width: 1px;
             height: 385px;
             background-color: #2e364b;
+            @media (max-width: $mobile-width){
+               width: 100%;
+               height: 1px;
+               bottom: 0px;
+               top: auto;
+            }
+
         }
     }
     &SideLogo{
         margin-bottom: 22px;
         height: 135px;
         overflow: hidden;
+        @media (max-width: $mobile-width){
+            //   position: absolute;
+            //   overflow: hidden;
+            //   left: 50%;
+            //   transform:translateX(-50%);
+              order: 2;
+              width: 25%;
+              height: auto;
+              margin-bottom: 0;
+              img{
+                width: 100%;
+              }
+            }
         img{
             height: 100%;
-            @media (max-width: $mobile-width){
-                width: 100%;
-                // height: auto;
-            }
         }
     }
     &SidePercents{
@@ -121,6 +153,12 @@
         font-size: 32px;
         font-weight: 700;
         text-transform: uppercase;
+        @media (max-width: $mobile-width){             
+            width: 30%;
+            text-align: right;
+            font-size: 32px;
+            order: 1;
+        }
     }
     &SidePrecentsRed{
         color: #e62a52;
@@ -132,6 +170,20 @@
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 25px;
+        @media (max-width: $mobile-width){
+                text-align: left;
+                width: 30%;
+                font-size: 10px;
+                order: 3;
+        }
+    }
+    &VoteButton{
+        @media (max-width: $mobile-width){
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+            order: 4;
+        }
     }
     &EventDots{
         position: absolute;
@@ -141,7 +193,6 @@
         transform: translateX(-50%);
     }
     &EventDotsItem{
-        /* Style for "Rectangle" */
         width: 30px;
         height: 6px;
         border-radius: 10px;

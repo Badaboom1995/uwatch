@@ -13,7 +13,7 @@
     &Slider{
         width: 100%;
         display: flex;
-        overflow: scroll;
+        overflow: hidden;
     }
     &Controls{
         display: flex;

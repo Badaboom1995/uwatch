@@ -1,7 +1,7 @@
 .mainScreen{
     flex-grow: 1;
     height: calc(100vh - 100px);
-    overflow: scroll;
+    overflow: hidden;
     padding-top: 40px;
     padding-left: 80px;
     padding-bottom: 40px;
